@@ -7,7 +7,7 @@ ROOT_DIR="$(dirname "$SCRIPT_PATH")"
 
 source "$ROOT_DIR/src/env.sh"
 source "$ROOT_DIR/src/constants.sh"
-source "$ROOT_DIR/src/cookies.sh"
+source "$ROOT_DIR/src/requests.sh"
 source "$ROOT_DIR/src/totalexpress.sh"
 
 load_env

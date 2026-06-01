@@ -7,4 +7,4 @@ readonly BASE_URL="https://totalconecta.totalexpress.com.br"
 readonly TRACKING_URL="$BASE_URL/rastreamento"
 readonly CHECK_URL="$BASE_URL/mfe-rastreio/api/basic"
 readonly STATUS_URL="$BASE_URL/rastreamento/rastreamento/encomendas"
-
+readonly DELIVERY_URL="$BASE_URL/mfe-rastreio/api/order-data"
