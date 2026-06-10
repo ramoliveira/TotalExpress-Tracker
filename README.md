@@ -35,9 +35,10 @@ Este projeto automatiza o fluxo de consulta disponível publicamente no site da 
 ## Como utilizar?
 
 ### Pré-requisitos
-* Bash
+* `bash`
 * `curl`
 * `jq`
+* `ca-certificates`
 
 ### 0. Configuração via `.env` (opcional)
 Crie um arquivo `.env` na raíz do projeto:
