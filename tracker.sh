@@ -19,7 +19,5 @@ if [[ -z "$TRACKING_CODE" ]]; then
     exit 1
 fi
 
-# echo "📦 Encomenda: $TRACKING_CODE"
-
 track_package "$TRACKING_CODE"
 
