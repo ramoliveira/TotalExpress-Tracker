@@ -40,6 +40,9 @@ Este projeto automatiza o fluxo de consulta disponível publicamente no site da 
 * `jq`
 * `ca-certificates`
 
+> [NOTE!]
+> Caso prefira usar uma imagem docker dê uma olhada na sessão [Docker](#Docker).
+
 ### 0. Configuração via `.env` (opcional)
 Crie um arquivo `.env` na raíz do projeto:
 
@@ -100,3 +103,34 @@ Senão, terá que informar o código de rastreio ao script:
 2. Armazena os cookies em um `cookie jar`.
 3. Reutiliza essa sessão para consultar a API de rastreio.
 4. Obtém os dados da encomenda e os apresenta no terminal.
+
+## Docker
+
+O projeto possui uma imagem Docker com todas as dependências necessárias já instaladas. Dessa forma não é necessário configurar o ambiente local.
+
+### 1. Construindo a imagem
+Na raiz do projeto execute:
+```
+docker build -t totalexpress-tracker .
+```
+
+### 2. Executando uma consulta
+* Execução passando o código de rastreio através da opção `-e`:
+```
+docker run --rm \
+    -e TRACKING_CODE=TX12345678901tx \
+    totalexpress-tracker
+```
+
+* Execução passando o arquivo `.env`. O arquivo pode ser passado através da opção `--env-file`:
+```
+docker run --rm \
+    --env-file .env \
+    totalexpress-tracker
+```
+
+* Execução passando o código de rastreio:
+```
+docker run --rm totalexpress-tracker TX12345678901tx
+```
+
