@@ -64,6 +64,9 @@ Senão, terá que informar o código de rastreio ao script:
 ./tracker.sh TX12345678901tx
 ```
 
+> [WARNING!]
+> Lembre-se de dar permissão ao script para execução.
+
 > [NOTE!]
 > O argumento informado pela linha de comando possui prioridade sobre o valor definido no `.env`.
 
