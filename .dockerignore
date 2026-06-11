@@ -12,3 +12,6 @@ README.md
 
 *.log
 *.json
+
+.DS_Store
+*/.DS_Store
