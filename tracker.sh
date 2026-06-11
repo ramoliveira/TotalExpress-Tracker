@@ -15,7 +15,7 @@ load_env
 TRACKING_CODE="${1:-${TRACKING_CODE:-}}"
 
 if [[ -z "$TRACKING_CODE" ]]; then
-    echo "Nenhum código de rastreio informado"
+    echo "❌ Nenhum código de rastreio informado"
     exit 1
 fi
 
