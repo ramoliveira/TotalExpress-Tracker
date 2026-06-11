@@ -40,7 +40,7 @@ Este projeto automatiza o fluxo de consulta disponível publicamente no site da 
 * `jq`
 * `ca-certificates`
 
-> [NOTE!]
+> [!NOTE]
 > Caso prefira usar uma imagem docker dê uma olhada na sessão [Docker](#Docker).
 
 ### 0. Configuração via `.env` (opcional)
@@ -50,7 +50,7 @@ Crie um arquivo `.env` na raíz do projeto:
 TRACKING_CODE=TX12345678901tx
 ```
 
-> [NOTE!]
+> [!NOTE]
 > Ao criar o arquivo `.env` você garante que o script sempre terá o código de rastreio salvo.
 
 ### 1. Utilizando o script
@@ -64,10 +64,10 @@ Senão, terá que informar o código de rastreio ao script:
 ./tracker.sh TX12345678901tx
 ```
 
-> [WARNING!]
+> [!WARNING]
 > Lembre-se de dar permissão ao script para execução.
 
-> [NOTE!]
+> [!TIP]
 > O argumento informado pela linha de comando possui prioridade sobre o valor definido no `.env`.
 
 ### Exemplo de saída
