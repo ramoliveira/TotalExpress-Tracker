@@ -1,0 +1,14 @@
+.env
+*/.env
+!env.sh
+
+.cookies
+*/.cookies
+
+.git
+.gitignore
+
+README.md
+
+*.log
+*.json
